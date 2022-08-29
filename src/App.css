@@ -1,0 +1,103 @@
+#root {
+  text-align: center;
+  width: 100%;
+}
+
+.App {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tasks-list-container {
+  width: 80%;
+}
+
+.header-tasks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.link-create {
+  padding: 4px 8px;
+  border-radius: 4px;
+  background-color: indigo;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.link-create:hover {
+  color: gray;
+}
+
+.tasks-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card-task {
+  background: rgba(0, 0, 0, 0.568);
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.header-task-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-delete {
+  background-color: red;
+}
+
+.btn-edit {
+  background-color: rgb(56, 55, 55);
+  color: white;
+}
+
+.btn-edit:hover {
+  border-color: #646cff;
+}
+
+.btn-edit:focus,
+.btn-edit:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.form-task {
+  background-color: rgba(0, 0, 0, 0.849);
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.label-form {
+   display: block;
+   font-size: small;
+   font-weight: bold;
+   margin-bottom: 4px;
+}
+
+.input-form {
+  border-radius: 5px;
+  background-color: rgb(85, 84, 84);
+  color: white;
+  padding: 8px;
+  margin-bottom: 10px;
+}
